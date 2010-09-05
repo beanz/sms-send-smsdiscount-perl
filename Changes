@@ -1,5 +1,7 @@
 Revision history for Perl extension SMS::Send::SMSDiscount.
 
 {{$NEXT}}
+
+1.102480  2010-09-05 21:18:42 Europe/London
 	- Initial CPAN release taken from my code at
           http://www.xpl-perl.org.uk/
