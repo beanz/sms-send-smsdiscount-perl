@@ -1,0 +1,5 @@
+libsms-send-smsdiscount-perl (1.102600-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Mark Hindess <soft-debian@temporalanomaly.com>  Fri, 17 Sep 2010 10:33:43 +0100
