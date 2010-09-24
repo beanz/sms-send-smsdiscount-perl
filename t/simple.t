@@ -19,15 +19,14 @@ SKIP: {
                            _verbose => 0);
   ok($sms, 'SMS::Send->new with SMSDiscount driver');
 
-  my $serv = IO::Socket::INET->new(Listen => 1, LocalAddr => "127.0.0.1",
+  my $serv = IO::Socket::INET->new(Listen => 1, LocalAddr => 'localhost',
                                    LocalPort => 0);
-  $serv or die "Failed to set up fake HTTP server\n";
-  my $port = $serv->sockport;
-  #print STDERR "Using port: $port\n";
+  skip 'Failed to set up fake HTTP server', 10 unless ($serv);
   my $pid = fork;
   unless ($pid) { server($serv); }
+  $SMS::Send::SMSDiscount::URL =
+    'http://'.$serv->sockhost.':'.$serv->sockport.'/';
   $serv->close;
-  $SMS::Send::SMSDiscount::URL = 'http://127.0.0.1:'.$port.'/';
   ok(my $ret = $sms->send_sms(text => 'text1', to => '+441234654321'),
      'SMSDiscount successful message');
   ok(!$sms->send_sms(text => 'text2', to => '+441234654321'),
