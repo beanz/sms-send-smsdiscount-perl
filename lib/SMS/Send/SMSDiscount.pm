@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 package SMS::Send::SMSDiscount;
 
 # ABSTRACT: SMS::Send driver to send via smsdiscount.com
@@ -23,8 +25,6 @@ Software (http://www.smsdiscount.com/) service.
 =cut
 
 use 5.006;
-use strict;
-use warnings;
 use SMS::Send::Driver;
 use LWP::UserAgent;
 use HTTP::Request::Common qw(POST);
