@@ -1,3 +1,9 @@
+libsms-send-smsdiscount-perl (1.102670-1) unstable; urgency=low
+
+  * Make tests more robust.
+
+ -- Mark Hindess <soft-debian@temporalanomaly.com>  Fri, 24 Sep 2010 13:26:55 +0100
+
 libsms-send-smsdiscount-perl (1.102600-1) unstable; urgency=low
 
   * Initial Release.
