@@ -67,8 +67,6 @@ SKIP: {
 sub server {
   my $serv = shift;
   my $sel = IO::Select->new($serv);
-  my $client;
-  my $sel2;
   my $count = 1;
 
   foreach my $resp
@@ -97,10 +95,10 @@ sub server {
      "HTTP/1.0 402 Payment required\nContent-Type: text/plain\n\nOops\n",
     ) {
 
-    $sel->can_read(1) or die "Failed to receive connection\n";
-    $client = $serv->accept;
-    $sel2 = IO::Select->new($client);
-    $sel2->can_read(1) or die "Failed to receive request\n";
+    $sel->can_read(5) or die "Failed to receive connection\n";
+    my $client = $serv->accept;
+    my $sel2 = IO::Select->new($client);
+    $sel2->can_read(5) or die "Failed to receive request\n";
     my $got;
     my $bytes = $client->sysread($got, 1500);
     match($got, 'header', qr!^(.+?)\r?\n!, 'POST / HTTP/1.1');
