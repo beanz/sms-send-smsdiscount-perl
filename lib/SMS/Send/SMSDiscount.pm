@@ -39,6 +39,9 @@ our $URL = 'https://www.SMSDiscount.com/myaccount/sendsms.php';
 
 =method CONSTRUCTOR
 
+This constructor should not be called directly.  See L<SMS::Send> for
+details.
+
 =cut
 
 sub new {
