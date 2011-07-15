@@ -32,7 +32,7 @@ my %WriteMakefileArgs = (
     'SMS::Send::Driver' => '0',
     'URI::Escape' => '0'
   },
-  'VERSION' => '1.111780',
+  'VERSION' => '1.111960',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -25,6 +25,7 @@ requires:
   URI::Escape: 0
   perl: 5.006
 resources:
-  bugtracker: http://github.com/beanz/sms-send-smsdiscount-perl/issues
+  bugtracker: https://github.com/beanz/sms-send-smsdiscount-perl/issues
+  homepage: http://search.cpan.org/dist/SMS-Send-SMSDiscount/
   repository: git://github.com/beanz/sms-send-smsdiscount-perl.git
-version: 1.111780
+version: 1.111960

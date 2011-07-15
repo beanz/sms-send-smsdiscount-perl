@@ -42,14 +42,15 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "http://github.com/beanz/sms-send-smsdiscount-perl/issues"
+         "web" : "https://github.com/beanz/sms-send-smsdiscount-perl/issues"
       },
+      "homepage" : "http://search.cpan.org/dist/SMS-Send-SMSDiscount/",
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/beanz/sms-send-smsdiscount-perl.git",
-         "web" : "http://github.com/beanz/sms-send-smsdiscount-perl"
+         "web" : "https://github.com/beanz/sms-send-smsdiscount-perl"
       }
    },
-   "version" : "1.111780"
+   "version" : "1.111960"
 }
 

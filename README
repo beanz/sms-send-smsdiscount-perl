@@ -2,7 +2,7 @@ NAME
     SMS::Send::SMSDiscount - SMS::Send driver to send via smsdiscount.com
 
 VERSION
-    version 1.111780
+    version 1.111960
 
 SYNOPSIS
       # Create a testing sender
