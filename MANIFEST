@@ -8,6 +8,7 @@ META.json
 META.yml
 Makefile.PL
 README
+SMS-Send-SMSDiscount-1.142000/.travis.yml
 debian/changelog
 debian/compat
 debian/control
