@@ -1,6 +1,6 @@
 Revision history for Perl extension SMS::Send::SMSDiscount.
 
-1.111960  2011-07-15 20:51:02 Europe/London
+1.142000  2014-07-19 13:51:05+01:00 Europe/London
 
 1.111780  2011-06-27 22:57:25 Europe/London
         - Another attempt to fix test failures.
